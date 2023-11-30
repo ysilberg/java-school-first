@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Q_fiveteen",
+      "request": "launch",
+      "mainClass": "Q_fiveteen",
+      "projectName": "java_64413822"
+    },
+    {
+      "type": "java",
       "name": "run",
       "request": "launch",
       "mainClass": "${file}"
