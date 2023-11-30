@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Q_fiveteen {
   public static void main(String[] args) {
     try (Scanner myObj = new Scanner(System.in)) {
-      System.out.println("Please the price");
+      System.out.println("Please type the price");
       double price = myObj.nextDouble();
       int shtarot = (int) price;
       double agorotDecimal = price - shtarot;
