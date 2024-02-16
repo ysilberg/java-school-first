@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Q_Six$pointTester",
+      "request": "launch",
+      "mainClass": "Q_Six$pointTester",
+      "projectName": "java-school-first_a86d1ad"
+    },
+    {
+      "type": "java",
       "name": "run",
       "request": "launch",
       "mainClass": "${file}"
