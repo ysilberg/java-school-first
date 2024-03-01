@@ -1,30 +1,54 @@
 public class Q_Eight {
-  private String hebrew;
-  private String english;
+  private int x;
+  private int y;
+  private int radius;
+  private int dx;
+  private int dy;
 
-  String getHeb(String hebrew) {
-    hebrew = "חתול";
-    return hebrew;
+  public void Circle(double r, int x, int y) {
+    r = radius;
+    x = x;
+    y = y;
+    if (r < 0) {
+      r = 1;
+    }
+
   }
 
-  public void setEng(String e) {
-    english = e;
+  public void Circle(double r, Q_Eight center) {
+    center = x;
+    if (r < 0) {
+      r = 1;
+    }
+
   }
 
-  public void setHeb(String h) {
-    hebrew = h;
+  public void Circle(Q_Eight other) {
+    other = x;
+
   }
 
-  String toString(String h, String e) {
-    String result = h + ":" + e;
-    return result;
+  public String stringToString()
+  {
+    return "(" + r ", " + "(" + x + "," + y ")";
+
   }
 
-  public static void main(String args[]) {
-    Q_Eight l1 = new Q_Eight();
-    l1.setEng("cat");
-    l1.setHeb("חתול");
-    System.out.println(l1.toString());
+  public void move(int dx, int dy) {
+    x = dx;
+    y = dy;
+
+  }
+
+  public boolean intersect(Q_Eight C) {
+    if (C = this) {
+      return true;
+
+    }
+
+    else {
+      return false;
+    }
 
   }
 
