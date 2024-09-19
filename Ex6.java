@@ -1,16 +1,17 @@
+import java.util.Scanner;
+
 public class Ex6 {
-  private int d;
+  static Scanner reader = new Scanner(System.in);
 
-  public String originatlText(String Encoded, char arr[]) {
-    arr = Encoded.toCharArray();
-
-    for (int i = 0; i <= arr.length; i++) {
-      arr[i] = arr[i - d];
-    }
-
-    String decoded = new String(arr);
-
-    return decoded;
+  public static void main(String[] arg) {
+    A a1 = new A(3, '#');
+    A a2 = new A(3, '*');
+    a1.printTav();
+    a2.printTav();
+    a1.add(2);
+    a2.setNum(2);
+    a1.printTav();
+    a2.printTav();
   }
 
 }
