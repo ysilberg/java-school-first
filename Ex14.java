@@ -1,33 +1,27 @@
+import java.util.Scanner;
+
 public class Ex14 {
 
-  private String company;
-  private String model;
-  private String id;
-  private double price;
-  private int owners;
+  public static void Main(String args[]) {
+    Scanner scan = new Scanner(System.in);
+    int n = (int) (Math.random() * 26);
+    char ch = (char) ((int) ('A') + n);
+    int tries = 5;
+    char userInput = ' ';
 
-  public void Car() {
-    this.company = "Mercades";
-    this.model = "s300";
-    this.id = "56345";
-    this.price = 1000000.00;
-    this.owners = 0;
-  }
+    System.out.println("Guess mate: ");
+    while (tries != 0) {
+      userInput = scan.next().trim().charAt(0);
+      if (userInput == ch) {
+        System.out.println("Guessed right after- " + tries + " tries.");
+        break;
+      } else {
+        tries--;
+      }
 
-  public double GetPrice() {
-    return price;
-  }
+    }
 
-  public void setPrice(double price) {
-    this.price = price;
-  }
-
-  public void sellCar() {
-    owners++;
-  }
-
-  public String toString() {
-    return ("company - " + company + " model- " + id + " price- " + price + "owners- " + owners);
+    System.out.println("Failed to guess");
   }
 
 }
