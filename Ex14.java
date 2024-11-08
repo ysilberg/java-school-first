@@ -1,27 +1,22 @@
-import java.util.Scanner;
-
 public class Ex14 {
 
-  public static void Main(String args[]) {
-    Scanner scan = new Scanner(System.in);
-    int n = (int) (Math.random() * 26);
-    char ch = (char) ((int) ('A') + n);
-    int tries = 5;
-    char userInput = ' ';
-
-    System.out.println("Guess mate: ");
-    while (tries != 0) {
-      userInput = scan.next().trim().charAt(0);
-      if (userInput == ch) {
-        System.out.println("Guessed right after- " + tries + " tries.");
-        break;
+  public static String compress(String s) {
+    StringBuilder compressed = new StringBuilder();
+    int count = 1;
+    for (int i = 1; i < s.length(); i++) {
+      if (s.charAt(i) == s.charAt(i - 1)) {
+        count++;
       } else {
-        tries--;
+        compressed.append(s.charAt(i - 1));
+        compressed.append(count);
+        count = 1;
       }
-
     }
 
-    System.out.println("Failed to guess");
-  }
+    // Append the last character and its count
+    compressed.append(s.charAt(s.length() - 1));
+    compressed.append(count);
 
+    return compressed.toString();
+  }
 }

@@ -1,18 +1,15 @@
-import java.util.Scanner;
-
 public class Ex12 {
+  public String[] split(String s, char delim)
+{
 
-  public String number;
-  public String name;
-  public int money;
+    
+     s = str.split(" ");
+    
+    for(s : delim) 
+    {
 
-  Scanner scan = new Scanner(System.in);
-
-  public static void bankAccount() {
-    int number = scan.nextInt();
-    int money = scan.nextInt();
-    String name = scan.nextLine();
-
+      System.out.println(s);
   }
+}
 
 }

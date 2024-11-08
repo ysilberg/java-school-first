@@ -1,18 +1,16 @@
 public class Ex13 {
-  public int floorA;
-  public int floorB;
 
-  public parking()
-  {
-    T_a();
-    T_b();
+  public String replace(String s, char origin, char target) {
+    char[] charArr = s.toCharArray();
+    for (int i = 0; i <= s.length(); i++) {
+      if (charArr[i] == origin) {
+        charArr[i] = target;
+      }
+    }
+
+    String String = new String(charArr);
+    return String;
+
   }
 
-  public int T_a() {
-    return floorA++;
-  }
-
-  public int T_b() {
-    return floorB++;
-  }
 }
