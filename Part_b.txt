@@ -1,0 +1,21 @@
+a.D d2 = (D) c1;
+
+b. 
+ five objects are created.
+ Object-
+ 1: null
+ 2: 8, 9
+ 3: null
+ 4: 28
+ 5: 0, 3
+
+с.
+ i. compiles, output: 7  
+ ii compiles, output: 5, 24 
+ iii. compiles output: 5, 48 
+ iv.  fails    output: ClassCastException
+ v.   compiles  output n = -7
+ vi.  compiles  output n = 5
+
+
+
